@@ -1,0 +1,49 @@
+    # Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜ "     # The "symbol" segment is being set to "➜"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[docker_context]
+symbol = "🐋 "
+
+
+[git_branch]
+symbol = "🌱 "
+truncation_symbol = ""
+
+[git_state]
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+bisect = "BISECTING"
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+style = "bold yellow"
+
+[git_status]
+conflicted = "💥 "
+conflicted.style = "red"
+conflicted_count = link
+behind = "😰"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+
+[hostname]
+ssh_only=false
+style = "bold dimmed green"
+trim_at = ".companyname.com"
+
+[username]
+disabled = false
+style_root = "bold red"
+style_user = "bold yellow"
+show_always = true
+
+[nix_shell]
+use_name = true
+symbol="❄️  "
